@@ -2,29 +2,40 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-color: 255, 255, 255;
+    --background-color: #FFFFFF;
   }
+}
+
+:root {
+  --foreground-color: 0, 0, 0;
+  --background-color: #0E172B;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.bg-default-200 {
+  background-color: var(--background-color);
+}
+
+.group-data-[selected=true]:bg-primary {
+  background-color: var(--background-color);
 }
