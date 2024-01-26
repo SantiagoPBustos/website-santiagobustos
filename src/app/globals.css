@@ -1,41 +1,76 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-color: 255, 255, 255;
-    --background-color: #FFFFFF;
-  }
+:root {
+  --background: #0E172B;
+  --background-secondary: #ffffff;
+  --text-white: #E2E9F1;
+  --text-gray: #94A3B8;
 }
 
-:root {
-  --foreground-color: 0, 0, 0;
-  --background-color: #0E172B;
+div::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #0E172B;
+}
+
+div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: var(--text-gray);
+  border-radius: 5px;
 }
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  color: var(--foreground-color);
-  background-color: var(--background-color);
-  height: 100vh;
   width: 100%;
+  height: 100vh;
+  cursor: default;
+  position: relative;
+  background-color: var(--background);
 }
 
-main {
+p {
+  color: var(--text-white);
+}
+
+.relative {
+  position: relative;
+}
+
+.principal-wrapper {
   height: 100%;
   width: 100%;
 }
 
-.bg-default-200 {
-  background-color: var(--background-color);
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1240px;
+  padding-left: 6em;
+  padding-right: 6em;
+  margin: auto;
 }
 
-.group-data-[selected=true]:bg-primary {
-  background-color: var(--background-color);
+.sticky-wrapper {
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  width: 40%;
+  height: 100vh;
+  margin: 6em 0px 3em 0px;
+}
+
+.side-wrapper {
+  flex-direction: row;
+  width: 50%;
+  line-height: 1.5em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 6em 0px 3em 0px;
 }
