@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import "./globals.css";
 import Preferences from "@/componentsUI/Preferences/Preferences";
 import Logo from "@/subComponentsUI/Logo/Logo";
 import PersonalInfo from "@/componentsUI/PersonalInfo/PersonalInfo";
@@ -16,7 +15,7 @@ export default function Home() {
   };
 
   const backgroundStyle = {
-    background: `radial-gradient(circle at ${coordinates.x}px ${coordinates.y}px, #192b5c 0%, #0E172B 400px)`,
+    background: `radial-gradient(circle at ${coordinates.x}px ${coordinates.y}px, #192b5c 0%, #0E172B 700px)`,
   };
 
   const t = useTranslations("IndexPage");

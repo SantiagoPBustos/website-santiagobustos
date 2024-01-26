@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { ReactNode } from "react";
 import { locales } from "../../i18n";
 import { notFound } from "next/navigation";

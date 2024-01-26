@@ -1,21 +1,12 @@
-import Link from "next/link";
 import styles from "./styles.module.css";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
+import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
+import SoundBar from "@/subComponentsUI/SoundBar/SoundBar";
 
 export default function Preferences() {
-  const handleChangeLenguage = (e: any) => {
-    console.log(e);
-  };
-
   return (
     <nav className={`${styles.preferences}`}>
-      <Link href={"/"} target="_blank">
-        Musica
-      </Link>
-      <Link onClick={handleChangeLenguage} href={"/"} target="_blank">
-        Idioma
-      </Link>
+      <SoundBar />
+      <LocaleSwitcher />
     </nav>
   );
 }

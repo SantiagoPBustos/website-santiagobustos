@@ -51,7 +51,6 @@ p {
 .headers-wrapper {
   width: 100%;
   height: 11%;
-  border: 2px black solid;
   max-width: 1240px;
   margin: auto;
 }
@@ -92,3 +91,23 @@ p {
   padding-bottom: 70px;
   border: 2px black solid;
 }
+
+
+
+/* 2xl */
+@media screen and (max-width: 1535px) {}
+
+/* xl */
+@media screen and (max-width: 1270px) {}
+
+/* lg */
+@media screen and (max-width: 1023px) {}
+
+/* md */
+@media screen and (max-width: 767px) {}
+
+/* sm */
+@media screen and (max-width: 639px) {}
+
+/* xs */
+@media screen and (max-width: 479px) {}

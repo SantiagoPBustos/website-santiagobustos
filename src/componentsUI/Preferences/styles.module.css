@@ -1,0 +1,5 @@
+.preferences {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
