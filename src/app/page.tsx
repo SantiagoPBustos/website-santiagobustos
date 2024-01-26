@@ -3,6 +3,8 @@
 import { useState } from "react";
 import "./globals.css";
 import Preferences from "@/componentsUI/Preferences/Preferences";
+import Logo from "@/subComponentsUI/Logo/Logo";
+import Head from "next/head";
 
 export default function Home() {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -22,7 +24,10 @@ export default function Home() {
       style={{ ...backgroundStyle }}
       onMouseMove={handleMouseMove}
     >
-      <header className="headers-wrapper"></header>
+      <header className="headers-wrapper content-left">
+        <Logo />
+        <Preferences />
+      </header>
       <main className="page-wrapper">
         <section className="side-wrapper"></section>
         <section className="sticky-wrapper"></section>
