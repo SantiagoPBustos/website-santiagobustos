@@ -1,8 +1,15 @@
 :root {
   --background: #0E172B;
   --background-secondary: #ffffff;
-  --text-white: #E2E9F1;
-  --text-gray: #94A3B8;
+  --white: #E2E9F1;
+  --gray: #94A3B8;
+  --aqua: #5ADECB;
+  --text-selected: #154E5D;
+}
+
+p::selection {
+  background-color: var(--color-aqua);
+  color: var(--text-selected);
 }
 
 section::-webkit-scrollbar {
@@ -33,7 +40,7 @@ body {
 }
 
 p {
-  color: var(--text-gray);
+  color: var(--gray);
 }
 
 .principal-wrapper {
