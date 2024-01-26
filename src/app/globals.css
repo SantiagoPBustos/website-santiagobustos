@@ -5,17 +5,13 @@
   --text-gray: #94A3B8;
 }
 
-div::-webkit-scrollbar {
+section::-webkit-scrollbar {
   width: 0.5em;
-  background-color: #0E172B;
+  background-color: var(--background);
 }
 
-div::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-}
-
-div::-webkit-scrollbar-thumb {
-  background-color: var(--text-gray);
+section::-webkit-scrollbar-thumb {
+  background-color: var(--background);
   border-radius: 5px;
 }
 
@@ -31,14 +27,13 @@ body {
   cursor: default;
   position: relative;
   background-color: var(--background);
+  line-height: 1.625;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
-  color: var(--text-white);
-}
-
-.relative {
-  position: relative;
+  color: var(--text-gray);
 }
 
 .principal-wrapper {
@@ -46,15 +41,26 @@ p {
   width: 100%;
 }
 
+.headers-wrapper {
+  width: 100%;
+  height: 10%;
+  border: 2px black solid;
+  max-width: 1240px;
+  margin: auto;
+}
+
 .page-wrapper {
-  height: 100%;
+  height: 80%;
   width: 100%;
   justify-content: space-between;
   display: flex;
   max-width: 1240px;
-  padding-left: 6em;
-  padding-right: 6em;
   margin: auto;
+}
+
+.side-wrapper {
+  width: 5%;
+  border: 2px black solid;
 }
 
 .sticky-wrapper {
@@ -62,15 +68,16 @@ p {
   position: sticky;
   top: 0;
   width: 40%;
-  height: 100vh;
-  margin: 6em 0px 3em 0px;
+  margin: 2em 0px 1em 0px;
+  border: 2px black solid;
 }
 
-.side-wrapper {
+.content-wrapper {
   flex-direction: row;
   width: 50%;
-  line-height: 1.5em;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin: 6em 0px 3em 0px;
+  margin: 2em 0px 1em 0px;
+  padding-bottom: 70px;
+  border: 2px black solid;
 }
