@@ -6,6 +6,7 @@ import Logo from "@/subComponentsUI/Logo/Logo";
 import PersonalInfo from "@/componentsUI/PersonalInfo/PersonalInfo";
 import { useTranslations } from "next-intl";
 import SocialLinks from "@/componentsUI/SocialLinks/SocialLinks";
+import EmailLink from "@/componentsUI/EmailLink/EmailLink";
 
 export default function Home() {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -39,7 +40,9 @@ export default function Home() {
           <PersonalInfo title={t("title")} />
         </section>
         <section className="content-wrapper"></section>
-        <section className="side-wrapper"></section>
+        <section className="side-wrapper">
+          <EmailLink />
+        </section>
       </main>
       <footer className="headers-wrapper"></footer>
     </div>

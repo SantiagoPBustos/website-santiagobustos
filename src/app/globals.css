@@ -53,13 +53,15 @@ p {
   height: 11%;
   max-width: 1240px;
   margin: auto;
+  padding-top: 2%;
 }
 
 .content-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1em;
+  padding-left: 0;
+  align-items: center;
 }
 
 .page-wrapper {
@@ -72,7 +74,8 @@ p {
 
 .side-wrapper {
   width: 5%;
-  border: 2px black solid;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .sticky-wrapper {
