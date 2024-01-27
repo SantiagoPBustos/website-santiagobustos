@@ -37,7 +37,10 @@ export default function Home() {
           <SocialLinks />
         </section>
         <section className="sticky-wrapper">
-          <PersonalInfo title={t("title")} />
+          <PersonalInfo
+            universityDegree={t("universityDegree")}
+            descriptionPersonal={t("descriptionPersonal")}
+          />
         </section>
         <section className="content-wrapper"></section>
         <section className="side-wrapper">

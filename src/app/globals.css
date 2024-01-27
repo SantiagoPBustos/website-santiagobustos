@@ -7,17 +7,17 @@
   --text-selected: #154E5D;
 }
 
-p::selection {
+*::selection {
   background-color: var(--color-aqua);
   color: var(--text-selected);
 }
 
-section::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0.5em;
   background-color: var(--background);
 }
 
-section::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background-color: var(--background);
   border-radius: 5px;
 }
@@ -83,7 +83,6 @@ p {
   top: 0;
   width: 40%;
   margin: 2em 0px 1em 0px;
-  border: 2px black solid;
 }
 
 .content-wrapper {
