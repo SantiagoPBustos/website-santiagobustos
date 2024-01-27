@@ -5,6 +5,7 @@ import Preferences from "@/componentsUI/Preferences/Preferences";
 import Logo from "@/subComponentsUI/Logo/Logo";
 import PersonalInfo from "@/componentsUI/PersonalInfo/PersonalInfo";
 import { useTranslations } from "next-intl";
+import SocialLinks from "@/componentsUI/SocialLinks/SocialLinks";
 
 export default function Home() {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -31,7 +32,9 @@ export default function Home() {
         <Preferences />
       </header>
       <main className="page-wrapper">
-        <section className="side-wrapper"></section>
+        <section className="side-wrapper">
+          <SocialLinks />
+        </section>
         <section className="sticky-wrapper">
           <PersonalInfo title={t("title")} />
         </section>
