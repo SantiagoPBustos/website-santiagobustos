@@ -7,6 +7,7 @@ import PersonalInfo from "@/componentsUI/PersonalInfo/PersonalInfo";
 import { useTranslations } from "next-intl";
 import SocialLinks from "@/componentsUI/SocialLinks/SocialLinks";
 import EmailLink from "@/componentsUI/EmailLink/EmailLink";
+import NavBar from "@/componentsUI/NavBar/NavBar";
 
 export default function Home() {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -40,6 +41,12 @@ export default function Home() {
           <PersonalInfo
             universityDegree={t("universityDegree")}
             descriptionPersonal={t("descriptionPersonal")}
+          />
+          <NavBar
+            about={t("about")}
+            experience={t("experience")}
+            skills={t("skills")}
+            education={t("education")}
           />
         </section>
         <section className="content-wrapper"></section>

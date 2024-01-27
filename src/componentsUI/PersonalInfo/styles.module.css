@@ -3,7 +3,6 @@
     cursor: pointer;
     font-size: 3rem;
     letter-spacing: -.025em;
-    border: 2px black solid;
 }
 
 .title {
@@ -11,11 +10,9 @@
     font-size: 1.2em;
     font-weight: bold;
     letter-spacing: -.025em;
-    border: 2px black solid;
 }
 
 .description {
     width: 65%;
     margin-top: 1em;
-    border: 2px black solid;
 }

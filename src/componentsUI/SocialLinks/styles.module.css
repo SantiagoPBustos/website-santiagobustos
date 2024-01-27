@@ -12,7 +12,7 @@
 }
 
 .span {
-    width: 2px;
+    width: 1px;
     height: 8rem;
     background-color: var(--gray);
 }

@@ -1,6 +1,10 @@
 {
   "IndexPage": {
     "universityDegree": "Ingeniero de Software y Computación",
-    "descriptionPersonal": "Ingeniero de Software especializado en construir soluciones y experiencias digitales personalizadas."
+    "descriptionPersonal": "Ingeniero de Software especializado en construir soluciones y experiencias digitales personalizadas.",
+    "about": "SOBRE MI",
+    "experience": "EXPERIENCIA",
+    "skills": "TECNOLOGIAS",
+    "education": "EDUCACION"
   }
 }
