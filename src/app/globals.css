@@ -91,10 +91,7 @@ p {
   overflow-y: scroll;
   margin: 2em 0px 1em 0px;
   padding-bottom: 70px;
-  border: 2px black solid;
 }
-
-
 
 /* 2xl */
 @media screen and (max-width: 1535px) {}
