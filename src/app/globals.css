@@ -6,7 +6,6 @@
   --aqua: #5ADECB;
   --text-selected: #154E5D;
 }
-
 *::selection {
   background-color: var(--color-aqua);
   color: var(--text-selected);
