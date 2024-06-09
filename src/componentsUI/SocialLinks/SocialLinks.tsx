@@ -25,9 +25,6 @@ export default function SocialLinks() {
       >
         <InstagramIcon className={styles.icon} />
       </Link>
-      <Link href={"https://twitter.com/"} target="_blank">
-        <TwitterIcon className={styles.icon} />
-      </Link>
       <motion.span
         className={styles.span}
         initial={{

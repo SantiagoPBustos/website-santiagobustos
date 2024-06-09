@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 import SocialLinks from "@/componentsUI/SocialLinks/SocialLinks";
 import EmailLink from "@/componentsUI/EmailLink/EmailLink";
 import NavBar from "@/componentsUI/NavBar/NavBar";
+import AboutInfo from "@/componentsUI/Sections/about";
 
 export default function Home() {
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -47,9 +48,40 @@ export default function Home() {
             experience={t("experience")}
             skills={t("skills")}
             education={t("education")}
+            projects={t("projects")}
           />
         </section>
-        <section className="content-wrapper"></section>
+        <section className="content-wrapper">
+          <AboutInfo title={t("aboutTitle")} />
+          <div className="about-me">
+            <p className="title" id="about">
+              <span className="number-title">02. </span>
+              {t("experienceTitle")}
+            </p>
+            <div className="line-title"></div>
+          </div>
+          <div className="about-me">
+            <p className="title" id="about">
+              <span className="number-title">03. </span>
+              {t("educationTitle")}
+            </p>
+            <div className="line-title"></div>
+          </div>
+          <div className="about-me">
+            <p className="title" id="about">
+              <span className="number-title">04. </span>
+              {t("projectsTitle")}
+            </p>
+            <div className="line-title"></div>
+          </div>
+          <div className="about-me">
+            <p className="title" id="about">
+              <span className="number-title">05. </span>
+              {t("skillsTitle")}
+            </p>
+            <div className="line-title"></div>
+          </div>
+        </section>
         <section className="side-wrapper">
           <EmailLink />
         </section>

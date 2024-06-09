@@ -5,6 +5,12 @@
     "about": "ABOUT",
     "experience": "EXPERIENCE",
     "skills": "SKILLS",
-    "education": "EDUCATION"
+    "education": "EDUCATION",
+    "projects": "PROJECTS",
+    "aboutTitle": "About",
+    "experienceTitle": "Experience",
+    "skillsTitle": "Skills",
+    "educationTitle": "Education",
+    "projectsTitle": "Projects"
   }
 }

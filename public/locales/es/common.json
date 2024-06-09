@@ -4,7 +4,13 @@
     "descriptionPersonal": "Especializado en construir soluciones y experiencias digitales personalizadas.",
     "about": "SOBRE MI",
     "experience": "EXPERIENCIA",
+    "projects": "PROYECTOS",
     "skills": "TECNOLOGIAS",
-    "education": "EDUCACION"
+    "education": "EDUCACION",
+    "aboutTitle": "Sobre Mi",
+    "experienceTitle": "Experiencia",
+    "skillsTitle": "Tecnologias",
+    "educationTitle": "Educación",
+    "projectsTitle": "Proyectos"
   }
 }

@@ -5,6 +5,7 @@ type Props = {
   experience: string;
   skills: string;
   education: string;
+  projects: string;
 };
 
 export default function NavBar({
@@ -12,6 +13,7 @@ export default function NavBar({
   experience = "",
   skills = "",
   education = "",
+  projects = "",
 }: Props) {
   return (
     <nav className={`${styles.navStyles}`}>
@@ -20,6 +22,18 @@ export default function NavBar({
           <a href="#about">
             <span className={`${styles.span}`} />
             <span>{about}</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education">
+            <span className={`${styles.span}`}></span>
+            <span>{education}</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            <span className={`${styles.span}`} />
+            <span>{projects}</span>
           </a>
         </li>
         <li>
@@ -32,12 +46,6 @@ export default function NavBar({
           <a href="#skills">
             <span className={`${styles.span}`}></span>
             <span>{skills}</span>
-          </a>
-        </li>
-        <li>
-          <a href="#education">
-            <span className={`${styles.span}`}></span>
-            <span>{education}</span>
           </a>
         </li>
       </ul>

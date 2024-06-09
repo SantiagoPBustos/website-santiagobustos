@@ -1,6 +1,5 @@
 "use client";
 
-import { TwitterIcon } from "@/subComponentsUI/Icons/Icons";
 import styles from "./styles.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
